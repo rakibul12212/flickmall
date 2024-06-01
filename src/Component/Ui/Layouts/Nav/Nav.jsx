@@ -21,7 +21,7 @@ const Nav = () => {
       </div>
       <nav className="bg-white shadow-sm">
         <div className=" mx-auto px-4">
-          <div className="flex justify-between">
+          <div className="flex justify-between md:px-20 font-semibold">
             <div className="flex ">
               <div>
                 <a href="/" className="flex items-center py-4 md:px-2">
@@ -56,13 +56,13 @@ const Nav = () => {
               </Link>
             </div>
             <div className="hidden md:flex items-center space-x-5">
-              <div className="flex items-center bg-white rounded border py-[7px] px-[12px]">
+              <div className="flex items-center rounded border py-[7px] px-[12px] bg-slate-100">
                 <input
                   type="text"
                   placeholder="What are you looking ?"
-                  className="outline-none border-none text-gray-700 rounded"
+                  className="outline-none border-none text-gray-700 rounded bg-slate-100"
                 />
-                <button className="bg-transparent border-none outline-none">
+                <button className="bg-transparent border-none outline-none ps-5">
                   <svg
                     className="w-5 h-5 text-gray-700"
                     fill="none"

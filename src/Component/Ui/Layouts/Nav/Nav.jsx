@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -7,7 +8,7 @@ const Nav = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <div>
+    <div className='sticky top-0 z-50 border-b-2'>
     <div className="hidden md:block bg-black py-1">
       <div className="flex gap-x-3 justify-center items-center text-white">
         <p className="max-w-[474px] max-h-[18px] text-[14px]">
@@ -29,10 +30,10 @@ const Nav = () => {
             </div>
           </div>
           <div className="hidden md:flex items-center space-x-1">
-            <a href="/" className="py-4 px-2 text-gray-700 hover:text-gray-900">Home</a>
-            <a href="/" className="py-4 px-2 text-gray-700 hover:text-gray-900">Contact</a>
-            <a href="/" className="py-4 px-2 text-gray-700 hover:text-gray-900">About</a>
-            <a href="/" className="py-4 px-2 text-gray-700 hover:text-gray-900">Sign Up</a>
+            <Link to='/' className="py-4 px-2 text-gray-700 hover:text-gray-900">Home</Link>
+            <Link to='/' className="py-4 px-2 text-gray-700 hover:text-gray-900">Contact</Link>
+            <Link to='/' className="py-4 px-2 text-gray-700 hover:text-gray-900">About</Link>
+            <Link to='/' className="py-4 px-2 text-gray-700 hover:text-gray-900">Sign Up</Link>
           </div>
           <div className="hidden md:flex items-center space-x-5">
             <div className="flex items-center bg-white rounded border py-[7px] px-[12px]">
@@ -100,15 +101,29 @@ const Nav = () => {
           </div>
         </div>
       </div>
-      <div className={`${isOpen ? '' : 'hidden'} mobile-menu`}>
-        <ul className="">
-          <li><a href="/" className="block text-sm px-2 py-4 hover:bg-indigo-500 transition duration-300">Home</a></li>
-          <li><a href="/" className="block text-sm px-2 py-4 hover:bg-indigo-500 transition duration-300">Contact</a></li>
-          <li><a href="/" className="block text-sm px-2 py-4 hover:bg-indigo-500 transition duration-300">About</a></li>
-          <li><a href="/" className="block text-sm px-2 py-4 hover:bg-indigo-500 transition duration-300">Cart</a></li>
-          <li><a href="/" className="block text-sm px-2 py-4 hover:bg-indigo-500 transition duration-300">Sign Up</a></li>
-        </ul>
-      </div>
+       {/* Dropdown for Mobile */}
+       <div className="md:hidden ">
+          <button onClick={toggleMenu} className="text-white focus:outline-none">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+</svg>
+
+          </button>
+          {isOpen && (
+            <div className="absolute top-[70px] left-0 w-full bg-[#7AB2B2] top-100 z-10">
+              <div className="p-4">
+                <Link to="/" className="block text-white hover:text-[#4D869C] px-3 py-2 rounded-md">Home</Link>
+                <Link to="/" className="block text-white hover:text-[#4D869C] px-3 py-2 rounded-md">About</Link>
+                <Link to="/" className="block text-white hover:text-[#4D869C] px-3 py-2 rounded-md">Contact</Link>
+                <Link to="/" className="block text-white hover:text-[#4D869C] px-3 py-2 rounded-md">Sign Up</Link>
+                <Link to="/" className="block text-white hover:text-[#4D869C] px-3 py-2 rounded-md">Cart </Link>
+
+                
+                
+              </div>
+            </div>
+          )}
+          </div>
     </nav>
   </div>
   );

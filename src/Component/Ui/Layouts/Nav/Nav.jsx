@@ -32,25 +32,25 @@ const Nav = () => {
             <div className="hidden md:flex items-center space-x-7">
               <Link
                 to="/"
-                className="py-4 px-2 text-gray-700 hover:text-gray-900"
+                className="py-4 px-2 text-gray-700 hover:border-b-4 hover:border-black"
               >
                 Home
               </Link>
               <Link
                 to="/"
-                className="py-4 px-2 text-gray-700 hover:text-gray-900"
+                className="py-4 px-2 text-gray-700 hover:border-b-4 hover:border-black"
               >
                 Contact
               </Link>
               <Link
                 to="/"
-                className="py-4 px-2 text-gray-700 hover:text-gray-900"
+                className="py-4 px-2 text-gray-700 hover:border-b-4 hover:border-black"
               >
                 About
               </Link>
               <Link
                 to="/"
-                className="py-4 px-2 text-gray-700 hover:text-gray-900"
+                className="py-4 px-2 text-gray-700 hover:border-b-4 hover:border-black"
               >
                 Sign Up
               </Link>

@@ -59,7 +59,7 @@ const Banner = () => {
           <a href="/" className="md:pb-4 lg:pb-8 font-semibold">
             Sports & Outdoor
           </a>
-          <a href="/" className="md:pb-4 lg:pb- font-semibold">
+          <a href="/" className="md:pb-4 lg:pb-8 font-semibold">
             Baby&apos;s & Toys
           </a>
           <a href="/" className="md:pb-4 lg:pb-8 font-semibold">
@@ -73,28 +73,56 @@ const Banner = () => {
       <div className="max-w-full max-h-[500px] pt-5 overflow-hidden sm:ps-5 md:ps-5 lg:ps-10">
         <Swiper
           pagination={{
-            dynamicBullets: true,
+            dynamicBullets: false,
           }}
           modules={[Pagination]}
           className="mySwiper"
         >
-          <SwiperSlide>
+          <SwiperSlide className="relative">
             <img
               src="https://appletoolbox.com/wp-content/uploads/2020/10/iPhone-12-Pro-Max-Camera-System.png"
-              alt=""
+              alt="iPhone 14 Series"
             />
+            <p className="absolute md:top-20 md:left-10 md:px-10 text-white  font-semibold text-4xl ">
+              iPhone 14 series
+            </p>
+            <p className="absolute md:top-28 md:left-10 md:px-10 md:pt-10 text-white  font-bold text-6xl">
+              Up to 10% <br /> <span>off Voucher</span>
+            </p>
+            <div className="absolute md:top-56 md:left-10 md:px-10 md:pt-20 text-white flex justify-center items-center gap-2">
+              <a href="/" className="font-medium text-2xl hover:border-b-2">Shop Now</a>
+            </div>
           </SwiperSlide>
+
           <SwiperSlide>
             <img
               src="https://media.glamour.com/photos/65cce0375ea0c25e5b06764f/master/w_2560%2Cc_limit/spring%25202024%2520fashion%2520trends.jpg"
               alt=""
             />
+             <p className="absolute md:top-20 md:left-10 md:px-10 text-black  font-semibold text-4xl ">
+              Womans Fashion
+            </p>
+            <p className="absolute md:top-28 md:left-10 md:px-10 md:pt-10 text-black  font-bold text-6xl">
+              Up to 24% <br /> <span>off Voucher</span>
+            </p>
+            <div className="absolute md:top-56 md:left-10 md:px-10 md:pt-20 text-black flex justify-center items-center gap-2">
+              <a href="/" className="font-medium text-2xl hover:border-b-2 hover:border-black">Shop Now</a>
+            </div>
           </SwiperSlide>
           <SwiperSlide>
             <img
               src="https://static.vecteezy.com/system/resources/previews/027/295/652/non_2x/successful-businessman-in-leather-jacket-observing-documents-outside-office-empty-space-for-copy-free-photo.jpg"
               alt=""
             />
+             <p className="absolute md:top-20 md:left-10 md:px-10 text-gray-700  font-semibold text-4xl ">
+              Mans Fashion
+            </p>
+            <p className="absolute md:top-28 md:left-10 md:px-10 md:pt-10 text-white  font-bold text-6xl">
+              Up to 15% <br /> <span>off Voucher</span>
+            </p>
+            <div className="absolute md:top-56 md:left-10 md:px-10 md:pt-20 text-white flex justify-center items-center gap-2">
+              <a href="/" className="font-medium text-2xl hover:border-b-2">Shop Now</a>
+            </div>
           </SwiperSlide>
         </Swiper>
       </div>

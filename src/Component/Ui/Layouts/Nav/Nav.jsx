@@ -1,3 +1,4 @@
+import { Avatar } from "@nextui-org/react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -7,11 +8,12 @@ const Nav = () => {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
   return (
-    <div className=" sticky top-0 z-50 border-b-2">
+    <div className="sticky top-0 z-50 border-b-2">
       <div className="hidden md:block bg-black py-1">
         <div className="flex gap-x-3 justify-center items-center text-white">
-          <p className=" text-[14px]">
+          <p className="text-[14px]">
             Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
           </p>
           <a href="#" className="font-semibold text-[14px]">
@@ -20,11 +22,11 @@ const Nav = () => {
         </div>
       </div>
       <nav className="bg-white shadow-sm">
-        <div className=" mx-auto px-4">
+        <div className="mx-auto px-4">
           <div className="flex justify-between md:px-20 font-semibold">
-            <div className="flex ">
+            <div className="flex items-center">
               <div>
-                <a href="/" className="flex items-center py-4 md:px-2">
+                <a href="/" className="flex items-center py-2 md:py-4 md:px-2">
                   <span className="font-bold text-xl">Exclusive</span>
                 </a>
               </div>
@@ -32,25 +34,25 @@ const Nav = () => {
             <div className="hidden md:flex items-center space-x-7">
               <Link
                 to="/"
-                className="py-4 px-2 text-gray-700 hover:border-b-4 hover:border-black"
+                className="py-4 px-2 text-gray-700 hover:border-b-4 hover:border-red-500"
               >
                 Home
               </Link>
               <Link
                 to="/"
-                className="py-4 px-2 text-gray-700 hover:border-b-4 hover:border-black"
+                className="py-4 px-2 text-gray-700 hover:border-b-4 hover:border-red-500"
               >
                 Contact
               </Link>
               <Link
                 to="/"
-                className="py-4 px-2 text-gray-700 hover:border-b-4 hover:border-black"
+                className="py-4 px-2 text-gray-700 hover:border-b-4 hover:border-red-500"
               >
                 About
               </Link>
               <Link
                 to="/"
-                className="py-4 px-2 text-gray-700 hover:border-b-4 hover:border-black"
+                className="py-4 px-2 text-gray-700 hover:border-b-4 hover:border-red-500"
               >
                 Sign Up
               </Link>
@@ -59,7 +61,7 @@ const Nav = () => {
               <div className="flex items-center rounded border py-[7px] px-[12px] bg-slate-100">
                 <input
                   type="text"
-                  placeholder="What are you looking ?"
+                  placeholder="What are you looking for?"
                   className="outline-none border-none text-gray-700 rounded bg-slate-100"
                 />
                 <button className="bg-transparent border-none outline-none ps-5">
@@ -103,6 +105,12 @@ const Nav = () => {
                   <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm0 2c0-.55-.45-1-1-1s-1 .45-1 1 .45 1 1 1 1-.45 1-1zm10-2c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2zm0 2c0-.55-.45-1-1-1s-1 .45-1 1 .45 1 1 1 1-.45 1-1zm-13.83-6.91l.03.07L6 14.25V21h2v-6.75h8V21h2v-6.75l1.9-5.66c.08-.23.13-.48.13-.75 0-.83-.68-1.5-1.5-1.5H5.5L4.75 4H1V6h2l2.28 6.91zM6 12l1.1-3.4L19 8.27 17.9 12H6z" />
                 </svg>
               </div>
+              <div>
+                <Avatar
+                  src="https://i.pravatar.cc/150?u=a042581f4e29026024d"
+                  alt="user"
+                />
+              </div>
             </div>
             <div className="md:hidden flex items-center">
               <button
@@ -124,29 +132,11 @@ const Nav = () => {
             </div>
           </div>
         </div>
+
         {/* Dropdown for Mobile */}
-        <div className="md:hidden ">
-          <button
-            onClick={toggleMenu}
-            className="text-white focus:outline-none"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              className="size-6"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-              />
-            </svg>
-          </button>
+        <div className="md:hidden">
           {isOpen && (
-            <div className="absolute top-[70px] left-0 w-full bg-[#7AB2B2] top-100 z-10 ">
+            <div className="absolute top-110 left-0 w-full bg-[#7AB2B2] z-10">
               <div className="p-4">
                 <Link
                   to="/"
@@ -178,6 +168,12 @@ const Nav = () => {
                 >
                   Cart
                 </Link>
+                <div className="px-3 py-2">
+                  <Avatar
+                    src="https://i.pravatar.cc/150?u=a042581f4e29026024d"
+                    alt="user"
+                  />
+                </div>
               </div>
             </div>
           )}

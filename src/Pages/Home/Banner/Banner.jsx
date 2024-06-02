@@ -3,11 +3,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Autoplay, Pagination } from "swiper/modules";
-import img from "../../../../public/banner.webp"
+import img from "/public/banner.webp"
 
 const Banner = () => {
   return (
-    <div className="md:px-[80px] flex justify-between  ">
+    <div className="md:ps-[75px] md:pe-[100px]  flex justify-between  ">
       <div className="max-w-[300px] md:pt-4 border-r-2 hidden md:block">
         <div className="flex flex-col items-start px-4  font-semibold">
           <select
@@ -15,7 +15,7 @@ const Banner = () => {
             name="category"
             className="px-2 py-4 md:pb-4 lg:pb-8 outline-none rounded text-base w-64 bg-white"
           >
-            <option value="womans-fashion" className="font-semibold">
+            <option value="womans-fashion" className="font-semibold ">
               Womans Fashion
             </option>
             <option value="item-1" className="font-semibold">
@@ -44,25 +44,25 @@ const Banner = () => {
           </select>
         </div>
         <div className="flex flex-col items-start px-7">
-          <a href="/" className="md:pb-4 lg:pb-8  font-semibold">
+          <a href="/" className="md:pb-4 lg:pb-8  font-semibold  hover:text-red-500">
             Electronics
           </a>
-          <a href="/" className="md:pb-4 lg:pb-8 font-semibold">
+          <a href="/" className="md:pb-4 lg:pb-8 font-semibold hover:text-red-500">
             Home & Lifestyle
           </a>
-          <a href="/" className="md:pb-4 lg:pb-8 font-semibold">
+          <a href="/" className="md:pb-4 lg:pb-8 font-semibold hover:text-red-500">
             Medicine
           </a>
-          <a href="/" className="md:pb-4 lg:pb-8 font-semibold">
+          <a href="/" className="md:pb-4 lg:pb-8 font-semibold hover:text-red-500">
             Sports & Outdoor
           </a>
-          <a href="/" className="md:pb-4 lg:pb-8 font-semibold">
+          <a href="/" className="md:pb-4 lg:pb-8 font-semibold hover:text-red-500">
             Baby&apos;s & Toys
           </a>
-          <a href="/" className="md:pb-4 lg:pb-8 font-semibold">
+          <a href="/" className="md:pb-4 lg:pb-8 font-semibold hover:text-red-500">
             Groceries & Pets
           </a>
-          <a href="/" className=" font-semibold">
+          <a href="/" className=" font-semibold hover:text-red-500">
             Health & Beauty
           </a>
         </div>
@@ -70,7 +70,7 @@ const Banner = () => {
       <div className="max-w-full max-h-[500px] md:pt-5 overflow-hidden sm:ps-5 md:ps-5 lg:ps-10">
         <Swiper
           autoplay={{
-            delay: 3000,
+            delay: 5000,
             disableOnInteraction: false,
           }}
           modules={[Pagination, Autoplay]}

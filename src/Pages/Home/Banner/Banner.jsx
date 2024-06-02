@@ -1,17 +1,13 @@
 import "./Banner.css";
-import React, { useRef, useState } from "react";
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-// import required modules
-import { Pagination } from "swiper/modules";
+import { Autoplay, Pagination } from "swiper/modules";
+
 const Banner = () => {
   return (
-    <div className="px-[80px] flex justify-between  ">
-      <div className="max-w-[300px] pt-4 border-r-2">
+    <div className="md:px-[80px] flex justify-between  ">
+      <div className="max-w-[300px] md:pt-4 border-r-2 hidden md:block">
         <div className="flex flex-col items-start px-4  font-semibold">
           <select
             id="category"
@@ -70,60 +66,131 @@ const Banner = () => {
           </a>
         </div>
       </div>
-      <div className="max-w-full max-h-[500px] pt-5 overflow-hidden sm:ps-5 md:ps-5 lg:ps-10">
+      <div className="max-w-full max-h-[500px] md:pt-5 overflow-hidden sm:ps-5 md:ps-5 lg:ps-10">
         <Swiper
-          pagination={{
-            dynamicBullets: false,
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: false,
           }}
-          modules={[Pagination]}
+          modules={[Pagination, Autoplay]}
           className="mySwiper"
         >
           <SwiperSlide className="relative">
             <img
-              src="https://appletoolbox.com/wp-content/uploads/2020/10/iPhone-12-Pro-Max-Camera-System.png"
+              src="https://images.lifestyleasia.com/wp-content/uploads/sites/6/2022/09/22190343/Apple-iPhone-14-Pro-iPhone-14-Pro-Max-hero-220907-1-scaled.jpg"
               alt="iPhone 14 Series"
+              className="h-full"
             />
-            <p className="absolute md:top-20 md:left-10 md:px-10 text-white  font-semibold text-4xl ">
+            <p className="absolute text-white font-medium text-xl md:font-semibold md:text-4xl top-10 left-5 px-2 md:top-28 md:left-10 md:px-10 ">
               iPhone 14 series
             </p>
-            <p className="absolute md:top-28 md:left-10 md:px-10 md:pt-10 text-white  font-bold text-6xl">
+            <p className="absolute text-white top-14 left-5 px-2 pt-5  font-bold text-4xl sm:text-3xl md:top-36 md:left-10 md:px-10 md:pt-10 md:text-6xl">
               Up to 10% <br /> <span>off Voucher</span>
             </p>
-            <div className="absolute md:top-56 md:left-10 md:px-10 md:pt-20 text-white flex justify-center items-center gap-2">
-              <a href="/" className="font-medium text-2xl hover:border-b-2">Shop Now</a>
+            <div className="absolute text-white top-36 left-5 px-2 pt-5 md:top-64 md:left-10 md:px-10 md:pt-20  flex justify-center items-center gap-2 ">
+              <button className=" flex items-center gap-2">
+                <div>
+                  <p className="font-normal text-sm md:text-2xl hover:border-b-3">
+                    Shop Now
+                  </p>
+                </div>
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    className=" sm:size-6 md:size-8 pt-1"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                    />
+                  </svg>
+                </div>
+              </button>
             </div>
           </SwiperSlide>
-
-          <SwiperSlide>
+          <SwiperSlide className="relative">
             <img
-              src="https://media.glamour.com/photos/65cce0375ea0c25e5b06764f/master/w_2560%2Cc_limit/spring%25202024%2520fashion%2520trends.jpg"
-              alt=""
+              src="https://images.lifestyleasia.com/wp-content/uploads/sites/6/2022/09/22190343/Apple-iPhone-14-Pro-iPhone-14-Pro-Max-hero-220907-1-scaled.jpg"
+              alt="iPhone 14 Series"
+              className="h-full"
             />
-             <p className="absolute md:top-20 md:left-10 md:px-10 text-black  font-semibold text-4xl ">
-              Womans Fashion
+            <p className="absolute text-white font-medium text-xl md:font-semibold md:text-4xl top-10 left-5 px-2 md:top-28 md:left-10 md:px-10 ">
+              iPhone 14 series
             </p>
-            <p className="absolute md:top-28 md:left-10 md:px-10 md:pt-10 text-black  font-bold text-6xl">
-              Up to 24% <br /> <span>off Voucher</span>
+            <p className="absolute text-white top-14 left-5 px-2 pt-5  font-bold text-4xl sm:text-3xl md:top-36 md:left-10 md:px-10 md:pt-10 md:text-6xl">
+              Up to 10% <br /> <span>off Voucher</span>
             </p>
-            <div className="absolute md:top-56 md:left-10 md:px-10 md:pt-20 text-black flex justify-center items-center gap-2">
-              <a href="/" className="font-medium text-2xl hover:border-b-2 hover:border-black">Shop Now</a>
+            <div className="absolute text-white top-36 left-5 px-2 pt-5 md:top-64 md:left-10 md:px-10 md:pt-20  flex justify-center items-center gap-2 ">
+              <button className=" flex items-center gap-2">
+                <div>
+                  <p className="font-normal text-sm md:text-2xl hover:border-b-3">
+                    Shop Now
+                  </p>
+                </div>
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    className=" sm:size-6 md:size-8 pt-1"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                    />
+                  </svg>
+                </div>
+              </button>
             </div>
           </SwiperSlide>
-          <SwiperSlide>
+          <SwiperSlide className="relative">
             <img
-              src="https://static.vecteezy.com/system/resources/previews/027/295/652/non_2x/successful-businessman-in-leather-jacket-observing-documents-outside-office-empty-space-for-copy-free-photo.jpg"
-              alt=""
+              src="https://images.lifestyleasia.com/wp-content/uploads/sites/6/2022/09/22190343/Apple-iPhone-14-Pro-iPhone-14-Pro-Max-hero-220907-1-scaled.jpg"
+              alt="iPhone 14 Series"
+              className="h-full"
             />
-             <p className="absolute md:top-20 md:left-10 md:px-10 text-gray-700  font-semibold text-4xl ">
-              Mans Fashion
+            <p className="absolute text-white font-medium text-xl md:font-semibold md:text-4xl top-10 left-5 px-2 md:top-28 md:left-10 md:px-10 ">
+              iPhone 14 series
             </p>
-            <p className="absolute md:top-28 md:left-10 md:px-10 md:pt-10 text-white  font-bold text-6xl">
-              Up to 15% <br /> <span>off Voucher</span>
+            <p className="absolute text-white top-14 left-5 px-2 pt-5  font-bold text-4xl sm:text-3xl md:top-36 md:left-10 md:px-10 md:pt-10 md:text-6xl">
+              Up to 10% <br /> <span>off Voucher</span>
             </p>
-            <div className="absolute md:top-56 md:left-10 md:px-10 md:pt-20 text-white flex justify-center items-center gap-2">
-              <a href="/" className="font-medium text-2xl hover:border-b-2">Shop Now</a>
+            <div className="absolute text-white top-36 left-5 px-2 pt-5 md:top-64 md:left-10 md:px-10 md:pt-20  flex justify-center items-center gap-2 ">
+              <button className=" flex items-center gap-2">
+                <div>
+                  <p className="font-normal text-sm md:text-2xl hover:border-b-3">
+                    Shop Now
+                  </p>
+                </div>
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    className=" sm:size-6 md:size-8 pt-1"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                    />
+                  </svg>
+                </div>
+              </button>
             </div>
           </SwiperSlide>
+          
+          
         </Swiper>
       </div>
     </div>

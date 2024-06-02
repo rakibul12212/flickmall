@@ -146,7 +146,7 @@ const Nav = () => {
             </svg>
           </button>
           {isOpen && (
-            <div className="absolute top-[70px] left-0 w-full bg-[#7AB2B2] top-100 z-10">
+            <div className="absolute top-[70px] left-0 w-full bg-[#7AB2B2] top-100 z-10 ">
               <div className="p-4">
                 <Link
                   to="/"

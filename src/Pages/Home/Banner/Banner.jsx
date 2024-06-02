@@ -1,8 +1,9 @@
-import "./Banner.css";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Autoplay, Pagination } from "swiper/modules";
+import img from "../../../../public/banner.webp"
 
 const Banner = () => {
   return (
@@ -77,7 +78,7 @@ const Banner = () => {
         >
           <SwiperSlide className="relative">
             <img
-              src="https://images.lifestyleasia.com/wp-content/uploads/sites/6/2022/09/22190343/Apple-iPhone-14-Pro-iPhone-14-Pro-Max-hero-220907-1-scaled.jpg"
+              src={img}
               alt="iPhone 14 Series"
               className="h-full"
             />
@@ -115,7 +116,7 @@ const Banner = () => {
           </SwiperSlide>
           <SwiperSlide className="relative">
             <img
-              src="https://images.lifestyleasia.com/wp-content/uploads/sites/6/2022/09/22190343/Apple-iPhone-14-Pro-iPhone-14-Pro-Max-hero-220907-1-scaled.jpg"
+              src={img}
               alt="iPhone 14 Series"
               className="h-full"
             />
@@ -153,7 +154,7 @@ const Banner = () => {
           </SwiperSlide>
           <SwiperSlide className="relative">
             <img
-              src="https://images.lifestyleasia.com/wp-content/uploads/sites/6/2022/09/22190343/Apple-iPhone-14-Pro-iPhone-14-Pro-Max-hero-220907-1-scaled.jpg"
+              src={img}
               alt="iPhone 14 Series"
               className="h-full"
             />

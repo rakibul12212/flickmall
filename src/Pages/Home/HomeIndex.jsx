@@ -1,4 +1,5 @@
 
+import Card from '../../Component/Ui/Card/Card';
 import Banner from './Banner/Banner';
 import FlashSale from './FlashSale/FlashSale';
 
@@ -7,6 +8,7 @@ const HomeIndex = () => {
         <div>
             <Banner/>
             <FlashSale/>
+            <Card/>
         </div>
     );
 };

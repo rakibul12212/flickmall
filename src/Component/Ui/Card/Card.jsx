@@ -1,10 +1,10 @@
+
 import { useState } from "react";
 import "./Card.css";
 
-const Card = () => {
-  const [rating, setRating] = useState(5); // State to hold the rating value
-
-  // Function to handle when a star is clicked
+const Card = ({ imageSrc, productName, DiscountPrice,OriginalPrice, initialRating,review }) => {
+    
+  const [rating, setRating] = useState(initialRating);
   const handleStarClick = (value) => {
     setRating(value);
   };
@@ -13,17 +13,17 @@ const Card = () => {
     <div>
       <div>
         <div className="relative inline-block">
-        <img
-        src="https://i.ibb.co/47xyFfn/g92-2-500x500-1.png"
-        alt="Example Image"
-        className="p-12 bg-slate-100 rounded"
-    />
-    <div className="absolute inset-x-0 bottom-0 flex items-center justify-center bg-black text-white opacity-0 hover:opacity-100 transition-opacity duration-300">
-        <button className="p-2">Add To Cart</button>
-    </div>
+          <img
+            src={imageSrc}
+            alt={productName}
+            className="p-12 bg-slate-100 rounded"
+          />
+          <div className="absolute inset-x-0 bottom-0 flex items-center justify-center bg-black text-white opacity-0 hover:opacity-100 transition-opacity duration-300">
+            <button className="p-2">Add To Cart</button>
+          </div>
           <div>
-            <p className="absolute top-3 left-2 bg-red-500 text-white px-2 py-1 rounded text-sm">
-              - 40 %
+            <p className="absolute top-3 left-2 bg-red-500 text-white px-3 py-1 rounded text-sm">
+              -40%
             </p>
             <a
               href="#"
@@ -71,11 +71,11 @@ const Card = () => {
           </div>
         </div>
         <div className="">
-          <p className="py-1 font-semibold text-xl">Havit hV-G92 GamePad</p>
+          <p className="py-1 font-semibold text-xl">{productName}</p>
           <p className="flex gap-3 pt-1">
-            <span className="text-rose-500 font-medium text-base">$120</span>
-            <s className="text-slate-400">$160</s>
-          </p>
+             <span className="text-rose-500 font-medium text-base">${DiscountPrice}</span>
+             <s className="text-slate-400">${OriginalPrice}</s>
+           </p>
           <div className="flex items-center gap-2 py-1">
             <div className="rating">
               {[...Array(5)].map((_, index) => {
@@ -92,7 +92,7 @@ const Card = () => {
               })}
             </div>
             <div>
-              <p className="text-slate-400">(88)</p>
+              <p className="text-slate-400">({review})</p>
             </div>
           </div>
         </div>
@@ -102,3 +102,6 @@ const Card = () => {
 };
 
 export default Card;
+
+
+

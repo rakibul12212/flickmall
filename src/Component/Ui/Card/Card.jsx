@@ -2,7 +2,7 @@
 import { useState } from "react";
 import "./Card.css";
 
-const Card = ({ imageSrc, productName, DiscountPrice,OriginalPrice, initialRating,review }) => {
+const Card = ({ imageSrc,sale,  productName, DiscountPrice,OriginalPrice, initialRating,review}) => {
     
   const [rating, setRating] = useState(initialRating);
   const handleStarClick = (value) => {
@@ -16,14 +16,15 @@ const Card = ({ imageSrc, productName, DiscountPrice,OriginalPrice, initialRatin
           <img
             src={imageSrc}
             alt={productName}
-            className="p-12 bg-slate-100 rounded"
+            className="p-12 w-[265px] h-[275px] bg-slate-100 rounded"
+            // style={{ height: height, width: width }}
           />
           <div className="absolute inset-x-0 bottom-0 flex items-center justify-center bg-black text-white opacity-0 hover:opacity-100 transition-opacity duration-300">
             <button className="p-2">Add To Cart</button>
           </div>
           <div>
             <p className="absolute top-3 left-2 bg-red-500 text-white px-3 py-1 rounded text-sm">
-              -40%
+              -{sale}%
             </p>
             <a
               href="#"

@@ -34,7 +34,7 @@ const categories = [
 
 const Category = () => {
   return (
-    <div className="pt-10 md:pt-28 px-2 md:px-24">
+    <div className="pt-10 md:pt-28 px-2 md:px-24 py-20">
       <p className="text-red-500 border-l-8 border-rose-700 ps-3 py-2 ">
         Categories
       </p>

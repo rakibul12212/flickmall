@@ -144,7 +144,7 @@ const Nav = () => {
         {/* Dropdown for Mobile */}
         <div className="md:hidden">
           {isOpen && (
-            <div className="absolute top-110 left-0 w-full bg-[#7AB2B2] z-10">
+            <div className="absolute top-110 left-0 w-full bg-slate-700 z-10">
               <div className="p-4">
                 <Link
                   to="/"

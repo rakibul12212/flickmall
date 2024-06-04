@@ -5,6 +5,7 @@ import "swiper/css/pagination";
 import { Autoplay, Pagination } from "swiper/modules";
 import img from "/public/banner.webp"
 
+
 const Banner = () => {
   return (
     <div className="md:ps-[75px] md:pe-[100px]  flex justify-between  ">
@@ -79,7 +80,6 @@ const Banner = () => {
           <SwiperSlide className="relative">
             <img
               src={img}
-              alt="iPhone 14 Series"
               className="h-full"
             />
             <p className="absolute text-white font-medium text-xl md:font-semibold md:text-4xl top-10 left-5 px-2 md:top-28 md:left-10 md:px-10 ">
@@ -199,72 +199,3 @@ const Banner = () => {
 };
 
 export default Banner;
-
-{
-  /* <div className="container px-5 md:px-20 flex border">
-      
-      <div className="pt-5 border-r-2 ">
-        <div className="flex flex-col items-start px-4 font-semibold">
-          <select
-            id="category"
-            name="category"
-            className="px-2 py-4 outline-none rounded text-base w-64 bg-white"
-          >
-            <option value="womans-fashion" className="font-semibold">
-              Womans Fashion
-            </option>
-            <option value="item-1" className="font-semibold">
-              Item-1
-            </option>
-            <option value="item-2" className="font-semibold">
-              Item-2
-            </option>
-          </select>
-        </div>
-        <div className="flex flex-col items-start px-4 font-semibold">
-          <select
-            id="category"
-            name="category"
-            className="px-2 pb-4 outline-none rounded text-base w-64 bg-white"
-          >
-            <option value="mans-fashion" className="font-semibold">
-              Mans Fashion
-            </option>
-            <option value="item-1" className="font-semibold">
-              Item-1
-            </option>
-            <option value="item-2" className="font-semibold">
-              Item-2
-            </option>
-          </select>
-        </div>
-        <div className="flex flex-col items-start px-7">
-          <a href="/" className="pb-4 font-semibold">
-            Electronics
-          </a>
-          <a href="/" className="pb-4 font-semibold">
-            Home & Lifestyle
-          </a>
-          <a href="/" className="pb-4 font-semibold">
-            Medicine
-          </a>
-          <a href="/" className="pb-4 font-semibold">
-            Sports & Outdoor
-          </a>
-          <a href="/" className="pb-4 font-semibold">
-            Baby&apos;s & Toys
-          </a>
-          <a href="/" className="pb-4 font-semibold">
-            Groceries & Pets
-          </a>
-          <a href="/" className="pb-4 font-semibold">
-            Health & Beauty
-          </a>
-        </div>
-      </div>
-      <div className="ps-10 border w-full"> 
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, odit vero. Odio ab autem, voluptatem cum aliquid velit doloremque assumenda ea, tempora accusamus reprehenderit? Pariatur.</p>
-      </div>
-    
-  </div> */
-}

@@ -42,11 +42,11 @@ const Category = () => {
       <p className="font-semibold text-4xl pt-5">Browse By Category</p>
 
       <div>
-        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 2xl:grid-cols-6 gap-4 lg:gap-6 pt-10 justify-items-center">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 2xl:grid-cols-6 gap-4 lg:gap-10 pt-10 justify-items-center">
           {categories.map((category, index) => (
             <div
               key={index}
-              className="border-2 hover:border-red-500 hover:text-red-500 p-4 w-40 flex flex-col items-center"
+              className="border-2 hover:border-red-500 hover:text-red-500 p-6 w-40 flex flex-col items-center "
             >
               <img
                 src={category.imageSrc}

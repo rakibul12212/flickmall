@@ -74,7 +74,6 @@ const products = [
     initialRating: 5,
     review: 105,
   },
-  
 ];
 
 const FlashSale = () => {
@@ -112,11 +111,45 @@ const FlashSale = () => {
   const visibleProducts = showAll
     ? products
     : products.slice(0, initialVisibleCount);
+
   return (
     <div className="pt-28 px-2 md:px-24">
       <p className="text-red-500 border-l-8 border-rose-700 ps-3 py-2">
         Todays
       </p>
+      <div className="flex flex-col md:flex-row  md:items-center gap-y-5 md:gap-x-16  py-5">
+        <div>
+          <p className="font-semibold text-4xl">Flash Sales </p>
+        </div>
+        <div className="flex items-end gap-3">
+          <div>
+            <p className="text-xs">Days</p>
+            <p className="font-semibold text-3xl">03</p>
+          </div>
+          <div>
+            <p className="text-red-500 font-semibold text-2xl pb-1">:</p>
+          </div>
+          <div>
+          <p className="text-xs">Hours</p>
+            <p className="font-semibold text-3xl">23</p>
+          </div>
+          <div>
+          <p className="text-red-500 font-semibold text-2xl pb-1">:</p>
+          </div>
+          <div>
+          <p className="text-xs">Minutes</p>
+            <p className="font-semibold text-3xl">19</p>
+          </div>
+          <div>
+          <p className="text-red-500 font-semibold text-2xl pb-1">:</p>
+          </div>
+          <div>
+          <p className="text-xs">Seconds</p>
+            <p className="font-semibold text-3xl">59</p>
+          </div>
+          
+        </div>
+      </div>
 
       <div>
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-6 gap-4 lg:gap-6 pt-10 ">

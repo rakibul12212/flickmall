@@ -115,7 +115,7 @@ const Nav = () => {
                 </svg>
               </div>
               <div>
-                <User/>
+                <User />
               </div>
             </div>
             <div className="md:hidden flex items-center">
@@ -146,40 +146,35 @@ const Nav = () => {
               <div className="p-4">
                 <Link
                   to="/"
-                  className="block text-white hover:text-[#4D869C] px-3 py-2 rounded-md"
-                >
-                  Home
-                </Link>
-                <Link
-                  to="/"
-                  className="block text-white hover:text-[#4D869C] px-3 py-2 rounded-md"
+                  className="block text-white px-3 py-2 rounded-md hover:text-red-500"
                 >
                   About
                 </Link>
                 <Link
                   to="/"
-                  className="block text-white hover:text-[#4D869C] px-3 py-2 rounded-md"
+                  className="block text-white px-3 py-2 rounded-md hover:text-red-500"
                 >
                   Contact
                 </Link>
+
                 <Link
                   to="/"
-                  className="block text-white hover:text-[#4D869C] px-3 py-2 rounded-md"
-                >
-                  Sign Up
-                </Link>
-                <Link
-                  to="/"
-                  className="block text-white hover:text-[#4D869C] px-3 py-2 rounded-md"
+                  className="block text-white px-3 py-2 rounded-md hover:text-red-500"
                 >
                   Cart
                 </Link>
-                <div className="px-3 py-2">
-                  <Avatar
-                    src="https://i.pravatar.cc/150?u=a042581f4e29026024d"
-                    alt="user"
-                  />
-                </div>
+                <Link
+                  to="/"
+                  className="block text-white px-3 py-2 rounded-md hover:text-red-500"
+                >
+                  WishList
+                </Link>
+                <Link
+                  to="/"
+                  className="block text-white px-3 py-2 rounded-md hover:text-red-500"
+                >
+                  Sign Out
+                </Link>
               </div>
             </div>
           )}

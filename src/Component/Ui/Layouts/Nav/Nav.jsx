@@ -16,7 +16,7 @@ const Nav = () => {
           <p className="text-[14px]">
             Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
           </p>
-          <a href="#" className="font-semibold text-[14px]">
+          <a href="#" className="font-semibold text-[14px] hover:text-red-500">
             <u>shopNow</u>
           </a>
         </div>

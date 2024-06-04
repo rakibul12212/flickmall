@@ -5,36 +5,56 @@ const Footer = () => {
     <div className="pt-10 md:py-10 px-2 md:px-20  bg-black text-white">
       <div className="grid sm:grid-cols-2 md:grid-cols-5 2xl:grid-cols-5 justify-evenly gap-y-8 2xl:gap-48 md:justify-items-center ">
         <div className="flex flex-col leading-loose ">
-          <a href="/" className="text-2xl font-semibold">
+          <a href="/" className="text-2xl font-semibold hover:text-red-500">
             Exclusive
           </a>
           <a href="#" className="pt-5 text-lg font-medium">
             Subscribe
           </a>
-          <a href="#">Get 10% off your first order</a>
+          <p className="pb-5">Get 10% off your first order</p>
+          <div className="flex items-center rounded border py-[5px] px-[12px] bg-transparent">
+            <input
+              type="text"
+              placeholder="subscribe"
+              className="outline-none border-none text-gray-700 rounded bg-transparent"
+            />
+            <button className="bg-transparent border-none outline-none ps-5">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                
+                stroke="currentColor"
+                className="size-6 hover:text-red-500"
+              >
+                <path
+                 
+                  d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
         <div className="flex flex-col leading-loose">
-          <a href="#" className="text-lg font-medium pb-2">
-            Support
-          </a>
-          <a href="#">
+          <p className="text-lg font-medium pb-2">Support</p>
+          <p>
             <span>111 Bijoy sarani,</span>
             <br />
             <span>Dhaka, DH 1515, Bangladesh.</span>
-          </a>
-          <a href="#">exclusive@gmail.com</a>
-          <a href="#">+88015-88888-9999</a>
+          </p>
+          <p>exclusive@gmail.com</p>
+          <p>+88015-88888-9999</p>
         </div>
         <div className="hidden md:block">
           <div className="flex flex-col leading-loose">
             <a href="#" className="text-lg font-medium pb-2">
               Account
             </a>
-            <a href="#">My Account</a>
-            <a href="#">Login / Register</a>
-            <a href="#">Cart</a>
-            <a href="#">Wishlist</a>
-            <a href="#">Shop</a>
+            <a href="#" className="hover:text-red-500">My Account</a>
+            <a href="#" className="hover:text-red-500">Login / Register</a>
+            <a href="#" className="hover:text-red-500">Cart</a>
+            <a href="#" className="hover:text-red-500">Wishlist</a>
+            <a href="#" className="hover:text-red-500">Shop</a>
           </div>
         </div>
         <div className="hidden md:block">
@@ -42,19 +62,17 @@ const Footer = () => {
             <a href="#" className="text-lg font-medium pb-2">
               Quick Link
             </a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms Of Use</a>
-            <a href="#">FAQ</a>
-            <a href="#">Contact</a>
+            <a href="#" className="hover:text-red-500">Privacy Policy</a>
+            <a href="#" className="hover:text-red-500">Terms Of Use</a>
+            <a href="#" className="hover:text-red-500">FAQ</a>
+            <a href="#" className="hover:text-red-500">Contact</a>
           </div>
         </div>
         <div className="flex flex-col leading-loose pb-10">
-          <a href="#" className="text-lg font-medium pb-2">
+          <a href="#" className="text-lg font-medium pb-2 hover:text-red-500">
             Download App
           </a>
-          <a href="#" className="font-sm text-xs pb-2">
-            Save $3 with App New User Only
-          </a>
+          <p className="font-sm text-xs pb-2">Save $3 with App New User Only</p>
           <div className="flex">
             <div>
               <img src="https://i.ibb.co/02Q5nJf/Qrcode-1.png" alt="qrcode" />

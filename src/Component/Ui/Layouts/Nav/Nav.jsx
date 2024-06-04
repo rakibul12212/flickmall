@@ -1,6 +1,7 @@
 import { Avatar } from "@nextui-org/react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import User from "../../User/User";
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -114,10 +115,7 @@ const Nav = () => {
                 </svg>
               </div>
               <div>
-                <Avatar
-                  src="https://i.pravatar.cc/150?u=a042581f4e29026024d"
-                  alt="user"
-                />
+                <User/>
               </div>
             </div>
             <div className="md:hidden flex items-center">

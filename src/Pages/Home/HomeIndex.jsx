@@ -1,5 +1,5 @@
-
 import Banner from './Banner/Banner';
+import Category from './Category/Category';
 import FlashSale from './FlashSale/FlashSale';
 
 const HomeIndex = () => {
@@ -7,6 +7,7 @@ const HomeIndex = () => {
         <div>
             <Banner/>
             <FlashSale/>
+            <Category/>
             
         </div>
     );

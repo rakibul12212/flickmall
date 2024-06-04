@@ -113,7 +113,7 @@ const FlashSale = () => {
     : products.slice(0, initialVisibleCount);
 
   return (
-    <div className="pt-28 px-2 md:px-24">
+    <div className="pt-10 md:pt-28 px-2 md:px-24  ">
       <p className="text-red-500 border-l-8 border-rose-700 ps-3 py-2">
         Todays
       </p>
@@ -130,24 +130,23 @@ const FlashSale = () => {
             <p className="text-red-500 font-semibold text-2xl pb-1">:</p>
           </div>
           <div>
-          <p className="text-xs">Hours</p>
+            <p className="text-xs">Hours</p>
             <p className="font-semibold text-3xl">23</p>
           </div>
           <div>
-          <p className="text-red-500 font-semibold text-2xl pb-1">:</p>
+            <p className="text-red-500 font-semibold text-2xl pb-1">:</p>
           </div>
           <div>
-          <p className="text-xs">Minutes</p>
+            <p className="text-xs">Minutes</p>
             <p className="font-semibold text-3xl">19</p>
           </div>
           <div>
-          <p className="text-red-500 font-semibold text-2xl pb-1">:</p>
+            <p className="text-red-500 font-semibold text-2xl pb-1">:</p>
           </div>
           <div>
-          <p className="text-xs">Seconds</p>
+            <p className="text-xs">Seconds</p>
             <p className="font-semibold text-3xl">59</p>
           </div>
-          
         </div>
       </div>
 

@@ -3,7 +3,7 @@ import "./Card.css";
 
 const Card = ({
   imageSrc,
-  sale,
+  sale=null,
   productName,
   DiscountPrice,
   OriginalPrice,
@@ -29,9 +29,11 @@ const Card = ({
             <button className="p-2">Add To Cart</button>
           </div>
           <div>
-            <p className="absolute top-3 left-2 bg-red-500 text-white px-3 py-1 rounded text-sm">
-              -{sale}%
-            </p>
+          {sale && ( // Conditional rendering for the sale badge
+              <p className="absolute top-3 left-2 bg-red-500 text-white px-3 py-1 rounded text-sm">
+                -{sale}%
+              </p>
+            )}
             <a
               href="#"
               className="absolute top-3 right-2 bg-white p-2 rounded-full text-sm"

@@ -5,6 +5,7 @@ import BestSellingProduct from './BestSellingProduct/BestSellingProduct';
 import Category from './Category/Category';
 import Feature from './Feature/Feature';
 import FlashSale from './FlashSale/FlashSale';
+import HighlightCategories from './HighlightCategories/HighlightCategories';
 
 const HomeIndex = () => {
     return (
@@ -13,6 +14,7 @@ const HomeIndex = () => {
             <FlashSale/>
             <Category/>
             <BestSellingProduct/>
+            <HighlightCategories/>
             <Feature/>
             
             

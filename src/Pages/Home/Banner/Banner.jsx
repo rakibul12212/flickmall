@@ -85,7 +85,7 @@ const Banner = () => {
             <p className="absolute text-white font-medium text-xl md:font-semibold md:text-4xl top-10 left-5 px-2 md:top-28 md:left-10 md:px-10 ">
               iPhone 14 series
             </p>
-            <p className="absolute text-white top-14 left-5 px-2 pt-5  font-bold text-4xl sm:text-3xl md:top-36 md:left-10 md:px-10 md:pt-10 md:text-6xl">
+            <p className="absolute text-white top-14 left-5 px-2 pt-5  font-bold text-4xl sm:text-3xl md:text-6xl md:top-36 md:left-10 md:px-10 md:pt-10 ">
               Up to 10% <br /> <span>off Voucher</span>
             </p>
             <div className="absolute text-white top-36 left-5 px-2 pt-5 md:top-64 md:left-10 md:px-10 md:pt-20  flex justify-center items-center gap-2 ">

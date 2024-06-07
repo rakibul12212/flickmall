@@ -5,8 +5,8 @@ const Card = ({
   imageSrc,
   sale=null,
   productName,
-  DiscountPrice,
-  OriginalPrice,
+  DiscountPrice=null,
+  OriginalPrice=null,
   initialRating,
   review,
 }) => {
@@ -68,10 +68,12 @@ const Card = ({
         <div className="">
           <p className="py-1 font-semibold text-xl">{productName}</p>
           <p className="flex gap-3 pt-1">
-            <span className="text-rose-500 font-medium text-base">
+           {DiscountPrice &&( <span className="text-rose-500 font-medium text-base">
               ${DiscountPrice}
-            </span>
-            <s className="text-slate-400">${OriginalPrice}</s>
+            </span>)}
+            {OriginalPrice &&(
+              <s className="text-slate-400">${OriginalPrice}</s>
+            )}
           </p>
           <div className="flex items-center gap-2 py-1">
             <div className="rating">

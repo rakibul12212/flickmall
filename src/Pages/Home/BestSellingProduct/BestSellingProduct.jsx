@@ -85,7 +85,7 @@ const BestSellingProduct = () => {
     const updateVisibleCount = () => {
       if (window.innerWidth >= 1536) {
         // 2xl
-        setInitialVisibleCount(6);
+        setInitialVisibleCount(4);
       } else if (window.innerWidth >= 1280) {
         // lg
         setInitialVisibleCount(4);
@@ -122,7 +122,7 @@ const BestSellingProduct = () => {
         <div>
           <p className="font-semibold text-4xl">Best Selling Product </p>
         </div>
-        <div className="flex justify-center items-center min-w-screen pr-5 2xl:pr-10">
+        <div className="flex justify-center items-center min-w-screen ">
           <button
             type="button"
             className="px-4 py-2 bg-red-700 text-white font-semibold rounded hover:bg-red-800"
@@ -134,7 +134,7 @@ const BestSellingProduct = () => {
       </div>
 
       <div>
-        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-6 gap-4 lg:gap-6 pt-10 ">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-4 lg:gap-6 pt-10 ">
           {visibleProducts.map((product, index) => (
             <Card
               key={index}

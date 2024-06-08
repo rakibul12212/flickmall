@@ -9,7 +9,7 @@ import img from "/public/banner.webp"
 const Banner = () => {
   return (
     <div className="md:ps-[75px] md:pe-[100px]  flex justify-between  ">
-      <div className="max-w-[300px] md:pt-4 border-r-2 hidden md:block">
+      <div className="max-w-[300px] md:pt-2 border-r-2 hidden md:block">
         <div className="flex flex-col items-start px-4  font-semibold">
           <select
             id="category"

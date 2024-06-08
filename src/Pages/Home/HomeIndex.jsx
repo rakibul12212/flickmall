@@ -1,5 +1,6 @@
 
 
+import Container from '../../Component/Ui/Container';
 import Banner from './Banner/Banner';
 import BestSellingProduct from './BestSellingProduct/BestSellingProduct';
 import Category from './Category/Category';
@@ -12,6 +13,7 @@ import OurProduct from './OurProduct/OurProduct';
 const HomeIndex = () => {
     return (
         <div>
+            <Container>
             <Banner/>
             <FlashSale/>
             <Category/>
@@ -20,7 +22,7 @@ const HomeIndex = () => {
             <OurProduct/>
             <NewArrival/>
             <Feature/>
-            
+            </Container>
             
         </div>
     );

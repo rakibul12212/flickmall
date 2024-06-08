@@ -131,7 +131,7 @@ const OurProduct = () => {
     const updateVisibleCount = () => {
       if (window.innerWidth >= 1536) {
         // 2xl
-        setInitialVisibleCount(6);
+        setInitialVisibleCount(8);
       } else if (window.innerWidth >= 1280) {
         // lg
         setInitialVisibleCount(8);
@@ -159,7 +159,7 @@ const OurProduct = () => {
     ? products
     : products.slice(0, initialVisibleCount);
   return (
-    <div className="pt-10 md:pt-28 px-2 md:px-24  ">
+    <div className="pt-10 md:pt-20 px-2 md:px-24  ">
       <p className="text-red-500 border-l-8 border-rose-700 ps-3 py-2">
         Our Products
       </p>
@@ -170,7 +170,7 @@ const OurProduct = () => {
       </div>
 
       <div>
-        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-6 gap-4 lg:gap-6 pt-10 ">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-4 lg:gap-6 pt-10 ">
           {visibleProducts.map((product, index) => (
             <AllProductCard
               key={index}

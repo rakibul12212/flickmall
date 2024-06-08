@@ -4,7 +4,7 @@ import img from '../../../../public/jbl.png'
 
 const HighlightCategories = () => {
   return (
-    <div className="pt-10 md:py-28 px-2 md:px-24 ">
+    <div className="pt-10 md:py-20 px-2 md:px-24 ">
       <div className="highlightCategoriesBg ">
         <div className="py-10 px-5 flex flex-col md:flex-row justify-evenly items-center">
           <div>

@@ -125,7 +125,7 @@ const BestSellingProduct = () => {
         <div className="flex justify-center items-center min-w-screen ">
           <button
             type="button"
-            className="px-4 py-2 bg-red-700 text-white font-semibold rounded hover:bg-red-800"
+            className="px-2 md:px-4 py-2  bg-red-700 text-white font-normal md:font-semibold rounded hover:bg-red-800"
             onClick={toggleShowAll}
           >
             {showAll ? "Show Less" : "View All"}

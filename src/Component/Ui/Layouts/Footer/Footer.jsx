@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="pt-10 md:py-10 px-2 md:ps-20 2xl:ps-32 md:pe-28 text-white">
   <div className="grid sm:grid-cols-2 md:grid-cols-5 2xl:grid-cols-5 justify-evenly gap-y-8 2xl:gap-28 md:justify-items-center">
     <div className="flex flex-col leading-loose">
-      <a href="/" className="text-2xl font-semibold hover:text-red-500">Exclusive</a>
+      <a href="/" className="text-2xl font-semibold hover:text-red-500">FlickMall</a>
       <a href="#" className="pt-5 text-lg font-medium">Subscribe</a>
       <p className="pb-5">Get 10% off your first order</p>
       <div className="flex items-center rounded border py-[5px] px-[12px] bg-transparent">

@@ -34,7 +34,7 @@ const Nav = () => {
                     href="/"
                     className="flex items-center py-2 md:py-4 md:px-2"
                   >
-                    <span className="font-bold text-xl">Exclusive</span>
+                    <span className="font-bold text-xl">FlickMall</span>
                   </a>
                 </div>
               </div>

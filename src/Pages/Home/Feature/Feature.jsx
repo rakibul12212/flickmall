@@ -2,7 +2,7 @@ import React from 'react';
 
 const Feature = () => {
     return (
-        <div className="py-5 md:py-16 px-2 md:px-24  ">
+        <div className=" py-5 md:py-16 px-2 md:px-24  ">
            <div className='flex flex-col md:flex-row justify-evenly items-center '>
                 <div className='flex flex-col justify-center items-center py-5'>
                     <img src="https://i.ibb.co/vmkjTyC/Services.png" alt="img-delivery" />

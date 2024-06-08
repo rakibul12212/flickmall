@@ -37,10 +37,10 @@ const User = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="signin"
                 className="block px-4 py-2 text-gray-800 hover:bg-red-500 hover:text-white"
               >
-                Sign Out
+                Sign in
               </a>
             </li>
             

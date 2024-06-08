@@ -40,22 +40,22 @@ const Nav = () => {
                 Home
               </Link>
               <Link
-                to="/"
+                to="contact"
                 className="py-4 px-2 text-gray-700 hover:border-b-4 hover:border-red-500"
               >
                 Contact
               </Link>
               <Link
-                to="/"
+                to="about"
                 className="py-4 px-2 text-gray-700 hover:border-b-4 hover:border-red-500"
               >
                 About
               </Link>
               <Link
-                to="/"
+                to="signin"
                 className="py-4 px-2 text-gray-700 hover:border-b-4 hover:border-red-500"
               >
-                Sign Up
+                Sign in
               </Link>
             </div>
             <div className="hidden md:flex items-center space-x-5">
@@ -145,13 +145,13 @@ const Nav = () => {
             <div className="absolute top-110 left-0 w-full bg-slate-700 z-10">
               <div className="p-4">
                 <Link
-                  to="/"
+                  to="about"
                   className="block text-white px-3 py-2 rounded-md hover:text-red-500"
                 >
                   About
                 </Link>
                 <Link
-                  to="/"
+                  to="contact"
                   className="block text-white px-3 py-2 rounded-md hover:text-red-500"
                 >
                   Contact
@@ -170,10 +170,10 @@ const Nav = () => {
                   WishList
                 </Link>
                 <Link
-                  to="/"
+                  to="signin"
                   className="block text-white px-3 py-2 rounded-md hover:text-red-500"
                 >
-                  Sign Out
+                  Sign in
                 </Link>
               </div>
             </div>

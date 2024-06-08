@@ -2,7 +2,7 @@ import React from "react";
 
 const NewArrival = () => {
   return (
-    <div className="pt-10 md:pt-28 px-2 md:px-24  ">
+    <div className="pt-10 md:pt-28 px-2 md:px-24 ">
       <p className="text-red-500 border-l-8 border-rose-700 ps-3 py-2">
         Featured
       </p>
@@ -12,7 +12,7 @@ const NewArrival = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-4 gap-4 pt-10">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-4 pt-10">
         <div className="md:col-span-2 md:row-span-4 relative">
           <img
             src="https://i.ibb.co/CJJYLxF/Frame-684.png"

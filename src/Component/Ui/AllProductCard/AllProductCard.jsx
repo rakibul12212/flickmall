@@ -1,13 +1,11 @@
 import { useState } from "react";
-import "./Card.css";
+import "./AllProductCard.css";
 
-const Card = ({
+const AllProductCard = ({
   imageSrc,
-  sale = null,
-  category=null,
+  category = null,
   productName,
-  DiscountPrice = null,
-  OriginalPrice = null,
+  Price = null,
   initialRating,
   review,
 }) => {
@@ -30,11 +28,6 @@ const Card = ({
             <button className="p-2">Add To Cart</button>
           </div>
           <div>
-            {sale && ( // Conditional rendering for the sale badge
-              <p className="absolute top-3 left-2 bg-red-500 text-white px-3 py-1 rounded text-sm">
-                -{sale}%
-              </p>
-            )}
             {category && ( // Conditional rendering for the sale badge
               <p className="absolute top-3 left-2 bg-green-500 text-white px-3 py-1 rounded text-sm">
                 {category}
@@ -72,19 +65,18 @@ const Card = ({
             </a>
           </div>
         </div>
-        <div className="">
-          <p className="py-1 font-semibold text-xl">{productName}</p>
-          <p className="flex gap-3 pt-1">
-            {DiscountPrice && (
-              <span className="text-rose-500 font-medium text-base">
-                ${DiscountPrice}
-              </span>
-            )}
-            {OriginalPrice && (
-              <s className="text-slate-400">${OriginalPrice}</s>
-            )}
-          </p>
-          <div className="flex items-center gap-2 py-1">
+        <p className="py-2 font-semibold text-xl">{productName}</p>
+        <div className="flex flex-col md:flex-row justify-start items-start md:items-center gap-x-2">
+          <div>
+            <p className="flex gap-3 pt-1">
+              {Price && (
+                <span className="text-rose-500 font-medium text-base">
+                  ${Price}
+                </span>
+              )}
+            </p>
+          </div>
+          <div className="flex justify-center items-center gap-2 py-1">
             <div className="rating">
               {[...Array(5)].map((_, index) => {
                 const starValue = index + 1;
@@ -100,7 +92,7 @@ const Card = ({
               })}
             </div>
             <div>
-              <p className="text-slate-400">({review})</p>
+              <p className="text-slate-400 ">({review})</p>
             </div>
           </div>
         </div>
@@ -109,4 +101,4 @@ const Card = ({
   );
 };
 
-export default Card;
+export default AllProductCard;

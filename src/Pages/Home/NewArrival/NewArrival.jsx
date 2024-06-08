@@ -12,7 +12,7 @@ const NewArrival = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-4 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-4 gap-4 pt-10">
         <div className="md:col-span-2 md:row-span-4 relative">
           <img
             src="https://i.ibb.co/CJJYLxF/Frame-684.png"

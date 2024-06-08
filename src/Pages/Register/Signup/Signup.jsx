@@ -4,7 +4,7 @@ import Container from '../../../Component/Ui/Container';
 const Signup = () => {
     return (
         <Container>
-        <div className="px-28 py-10">
+        <div className="px-28 py-10 ">
           <div className="flex justify-center items-center gap-16 ">
             <div>
               <img
@@ -14,7 +14,7 @@ const Signup = () => {
               />
             </div>
             <div className="flex flex-col justify-center pr-20">
-              <p className="font-semibold text-4xl">Log In to FlickMall</p>
+              <p className="font-semibold text-4xl">Create an account</p>
               <p className="py-5">Enter your details below</p>
               <div>
                 <input type="text" name="name" id="name"  placeholder="name"

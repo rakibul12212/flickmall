@@ -3,18 +3,20 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Autoplay, Pagination } from "swiper/modules";
-import img from "/public/banner.webp"
+ import img from "../../../../public/iphone.jpg"
+ import img1 from "../../../../public/iphone1.jpg"
+ import img2 from "../../../../public/iphone2.jpg"
 
 
 const Banner = () => {
   return (
     <div className="md:ps-[75px] md:pe-[100px]  flex justify-between  ">
-      <div className="max-w-[300px] md:pt-2 border-r-2 hidden md:block">
+      <div className="max-w-[250px] md:pt-2 border-r-2 hidden md:block">
         <div className="flex flex-col items-start px-4  font-semibold">
           <select
             id="category"
             name="category"
-            className="px-2 py-4 md:pb-4 lg:pb-8 outline-none rounded text-base w-64 bg-white"
+            className=" py-2 lg:pb-4 outline-none rounded text-base w-48 bg-white"
           >
             <option value="womans-fashion" className="font-semibold ">
               Womans Fashion
@@ -31,7 +33,7 @@ const Banner = () => {
           <select
             id="category"
             name="category"
-            className="px-2 md:pb-4 lg:pb-8 outline-none rounded text-base w-64 bg-white"
+            className=" lg:pb-4 outline-none rounded text-base w-48 bg-white"
           >
             <option value="mans-fashion" className="font-semibold">
               Mans Fashion
@@ -44,23 +46,23 @@ const Banner = () => {
             </option>
           </select>
         </div>
-        <div className="flex flex-col items-start px-7">
-          <a href="/" className="md:pb-4 lg:pb-8  font-semibold  hover:text-red-500">
+        <div className="flex flex-col items-start px-5">
+          <a href="/" className=" lg:pb-4  font-semibold  hover:text-red-500">
             Electronics
           </a>
-          <a href="/" className="md:pb-4 lg:pb-8 font-semibold hover:text-red-500">
+          <a href="/" className=" lg:pb-4 font-semibold hover:text-red-500">
             Home & Lifestyle
           </a>
-          <a href="/" className="md:pb-4 lg:pb-8 font-semibold hover:text-red-500">
+          <a href="/" className="lg:pb-4 font-semibold hover:text-red-500">
             Medicine
           </a>
-          <a href="/" className="md:pb-4 lg:pb-8 font-semibold hover:text-red-500">
+          <a href="/" className="lg:pb-4 font-semibold hover:text-red-500">
             Sports & Outdoor
           </a>
-          <a href="/" className="md:pb-4 lg:pb-8 font-semibold hover:text-red-500">
+          <a href="/" className="lg:pb-4 font-semibold hover:text-red-500">
             Baby&apos;s & Toys
           </a>
-          <a href="/" className="md:pb-4 lg:pb-8 font-semibold hover:text-red-500">
+          <a href="/" className="lg:pb-4 font-semibold hover:text-red-500">
             Groceries & Pets
           </a>
           <a href="/" className=" font-semibold hover:text-red-500">
@@ -68,30 +70,31 @@ const Banner = () => {
           </a>
         </div>
       </div>
-      <div className="max-w-full max-h-[500px] md:pt-5 overflow-hidden sm:ps-5 md:ps-5 lg:ps-10">
+      <div className=" md:pt-5 max-w-[960px] overflow-hidden sm:ps-5 md:ps-5 lg:ps-5">
         <Swiper
-          autoplay={{
+           autoplay={{
             delay: 5000,
             disableOnInteraction: false,
           }}
+        pagination={true}
           modules={[Pagination, Autoplay]}
           className="mySwiper"
         >
           <SwiperSlide className="relative">
             <img
               src={img}
-              className="h-full"
+              className="h-[240px] md:h-[340px] w-[960px]"
             />
-            <p className="absolute text-white font-medium text-xl md:font-semibold md:text-4xl top-10 left-5 px-2 md:top-28 md:left-10 md:px-10 ">
+            <p className="absolute text-white  text-sm md:font-semibold md:text-2xl top-20 left-5 px-2 md:top-16 md:left-5 md:px-5 ">
               iPhone 14 series
             </p>
-            <p className="absolute text-white top-14 left-5 px-2 pt-5  font-bold text-4xl sm:text-3xl md:text-6xl md:top-36 md:left-10 md:px-10 md:pt-10 ">
+            <p className="absolute text-white font-medium text-2xl sm:text-3xl md:text-5xl top-20 left-5 px-2 pt-7  md:top-16 md:left-5 md:px-5 md:pt-10 ">
               Up to 10% <br /> <span>off Voucher</span>
             </p>
-            <div className="absolute text-white top-36 left-5 px-2 pt-5 md:top-64 md:left-10 md:px-10 md:pt-20  flex justify-center items-center gap-2 ">
+            <div className="absolute text-white top-40 left-5 px-2 pt-5 md:top-48 md:left-5 md:px-5 md:pt-5  flex justify-center items-center gap-2 ">
               <button className=" flex items-center gap-2">
                 <div>
-                  <p className="font-normal text-sm md:text-2xl hover:border-b-3">
+                  <p className="font-normal text-sm md:text-xl hover:border-b-3">
                     Shop Now
                   </p>
                 </div>
@@ -115,21 +118,20 @@ const Banner = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide className="relative">
-            <img
-              src={img}
-              alt="iPhone 14 Series"
-              className="h-full"
+          <img
+              src={img1}
+            className="h-[240px] md:h-[340px] w-[960px]"
             />
-            <p className="absolute text-white font-medium text-xl md:font-semibold md:text-4xl top-10 left-5 px-2 md:top-28 md:left-10 md:px-10 ">
+          <p className="absolute text-black  text-sm md:font-semibold md:text-2xl top-20 left-5 px-2 md:top-16 md:left-5 md:px-5 ">
               iPhone 14 series
             </p>
-            <p className="absolute text-white top-14 left-5 px-2 pt-5  font-bold text-4xl sm:text-3xl md:top-36 md:left-10 md:px-10 md:pt-10 md:text-6xl">
+            <p className="absolute text-black font-medium text-2xl sm:text-3xl md:text-5xl top-20 left-5 px-2 pt-7  md:top-16 md:left-5 md:px-5 md:pt-10 ">
               Up to 10% <br /> <span>off Voucher</span>
             </p>
-            <div className="absolute text-white top-36 left-5 px-2 pt-5 md:top-64 md:left-10 md:px-10 md:pt-20  flex justify-center items-center gap-2 ">
+            <div className="absolute text-black top-40 left-5 px-2 pt-5 md:top-48 md:left-5 md:px-5 md:pt-5  flex justify-center items-center gap-2 ">
               <button className=" flex items-center gap-2">
                 <div>
-                  <p className="font-normal text-sm md:text-2xl hover:border-b-3">
+                  <p className="font-normal text-sm md:text-xl hover:border-b-3">
                     Shop Now
                   </p>
                 </div>
@@ -153,21 +155,20 @@ const Banner = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide className="relative">
-            <img
-              src={img}
-              alt="iPhone 14 Series"
-              className="h-full"
+          <img
+              src={img2}
+              className="h-[240px] md:h-[340px] w-[960px]"
             />
-            <p className="absolute text-white font-medium text-xl md:font-semibold md:text-4xl top-10 left-5 px-2 md:top-28 md:left-10 md:px-10 ">
+           <p className="absolute text-white  text-sm md:font-semibold md:text-2xl top-20 left-5 px-2 md:top-16 md:left-5 md:px-5 ">
               iPhone 14 series
             </p>
-            <p className="absolute text-white top-14 left-5 px-2 pt-5  font-bold text-4xl sm:text-3xl md:top-36 md:left-10 md:px-10 md:pt-10 md:text-6xl">
+            <p className="absolute text-white font-medium text-2xl sm:text-3xl md:text-5xl top-20 left-5 px-2 pt-7  md:top-16 md:left-5 md:px-5 md:pt-10 ">
               Up to 10% <br /> <span>off Voucher</span>
             </p>
-            <div className="absolute text-white top-36 left-5 px-2 pt-5 md:top-64 md:left-10 md:px-10 md:pt-20  flex justify-center items-center gap-2 ">
+            <div className="absolute text-white top-40 left-5 px-2 pt-5 md:top-48 md:left-5 md:px-5 md:pt-5  flex justify-center items-center gap-2 ">
               <button className=" flex items-center gap-2">
                 <div>
-                  <p className="font-normal text-sm md:text-2xl hover:border-b-3">
+                  <p className="font-normal text-sm md:text-xl hover:border-b-3">
                     Shop Now
                   </p>
                 </div>

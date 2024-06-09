@@ -65,11 +65,11 @@ const Nav = () => {
                 </Link>
               </div>
               <div className="hidden md:flex items-center space-x-5">
-                <div className="flex items-center rounded border py-[7px] px-[12px] bg-slate-100">
+                <div className="flex items-center rounded border py-[7px] px-[12px] bg-gray-100">
                   <input
                     type="text"
                     placeholder="What are you looking for?"
-                    className="outline-none border-none text-gray-700 rounded bg-slate-100"
+                    className="outline-none border-none text-sm font-normal text-gray-600 rounded bg-gray-100"
                   />
                   <button className="bg-transparent border-none outline-none ps-5">
                     <svg

@@ -31,7 +31,7 @@ const About = () => {
           />
         </div>
       </div>
-      <div className="flex flex-col md:flex-row justify-center items-center gap-y-5 md:gap-x-2 2xl:gap-x-16 py-1 md:py-20 hidden md:block">
+      <div className="hidden md:block"><div className="flex flex-col md:flex-row justify-center items-center gap-y-5 md:gap-x-2 2xl:gap-x-16 py-1 md:py-20 ">
         <div className="flex flex-col justify-center items-center py-5 border-2 p-5 w-60 h-60 hover:bg-red-500 hover:text-white">
           <img
             src="https://i.ibb.co/8bPy6gn/Services-4.png"
@@ -68,7 +68,7 @@ const About = () => {
           <p className="text-xl font-bold">23k</p>
           <p className="text-center">Annual gross sale on site</p>
         </div>
-      </div>
+      </div></div>
       <div className="hidden md:block">
         <Feature></Feature>
       </div>

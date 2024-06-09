@@ -7,7 +7,8 @@ import About from "../Pages/About/About";
 import Contact from "../Pages/Contact/Contact";
 import HomeIndex from "../Pages/Home/HomeIndex";
 import Signin from "../Pages/Register/Signin/Signin";
-import Signup from "../Pages/Register/Signup/Signup";
+import Signup from '../Pages/Register/Signup/Signup'
+
 
 const router = createBrowserRouter([
   {

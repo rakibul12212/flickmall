@@ -2,6 +2,7 @@ import React from "react";
 import Container from "../../../Component/Ui/Container";
 import { Link } from "react-router-dom";
 
+
 const Signin = () => {
   return (
     <Container>
@@ -40,7 +41,7 @@ const Signin = () => {
                 <a href="signin" className="text-red-500">forget password ?</a>
               </div>
               <div className="pt-5">
-                <p>Don't have an account ? <a href="signup" className="text-red-500">Sign Up</a></p>
+                <p>Don't have an account ? <Link to="/signup" className="text-red-500">Sign Up</Link></p>
               </div>
             </div>
           </div>

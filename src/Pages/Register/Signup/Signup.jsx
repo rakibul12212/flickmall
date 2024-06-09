@@ -1,5 +1,6 @@
 import React from 'react';
 import Container from '../../../Component/Ui/Container';
+import { Link } from 'react-router-dom';
 
 const Signup = () => {
     return (

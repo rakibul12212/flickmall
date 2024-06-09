@@ -34,13 +34,13 @@ const Signin = () => {
                 className="border-b-2 w-[300px]  pb-2 outline-none"
               />
               <div className="pt-5 flex justify-between items-center gap-x-4">
-                <Link to='signup' className="bg-red-500 text-white hover:bg-red-700 px-6 py-2">
+                <button className="bg-red-500 text-white hover:bg-red-700 px-6 py-2">
                   Sign in
-                </Link>
+                </button>
                 <a href="signin" className="text-red-500">forget password ?</a>
               </div>
               <div className="pt-5">
-                <p>Don't have an account ? <a href="signup" className="text-red-500">Sign Up</a></p>
+                <p>Don't have an account ? <Link to="signup" className="text-red-500">Sign Up</Link></p>
               </div>
             </div>
           </div>

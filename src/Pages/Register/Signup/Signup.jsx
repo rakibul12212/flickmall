@@ -43,7 +43,7 @@ const Signup = () => {
                   </button>
                 </div>
                 <div className='pt-5'>
-                    <p>Already have an account ? <a href="signin" className='text-red-500'>Sign in</a></p>
+                    <p>Already have an account ? <Link to="/signin" className='text-red-500'>Sign in</Link></p>
                 </div>
               </div>
             </div>

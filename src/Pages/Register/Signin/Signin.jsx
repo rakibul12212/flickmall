@@ -40,7 +40,7 @@ const Signin = () => {
                 <a href="signin" className="text-red-500">forget password ?</a>
               </div>
               <div className="pt-5">
-                <p>Don't have an account ? <Link to="signup" className="text-red-500">Sign Up</Link></p>
+                <p>Don't have an account ? <a href="signup" className="text-red-500">Sign Up</a></p>
               </div>
             </div>
           </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import Container from "../../../Component/Ui/Container";
+import { Link } from "react-router-dom";
 
 const Signin = () => {
   return (
@@ -33,9 +34,9 @@ const Signin = () => {
                 className="border-b-2 w-[300px]  pb-2 outline-none"
               />
               <div className="pt-5 flex justify-between items-center gap-x-4">
-                <button className="bg-red-500 text-white hover:bg-red-700 px-6 py-2">
+                <Link to='signup' className="bg-red-500 text-white hover:bg-red-700 px-6 py-2">
                   Sign in
-                </button>
+                </Link>
                 <a href="signin" className="text-red-500">forget password ?</a>
               </div>
               <div className="pt-5">

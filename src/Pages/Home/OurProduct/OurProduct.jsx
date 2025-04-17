@@ -49,7 +49,7 @@ const products = [
       {
         imageSrc: "https://i.ibb.co/GdByKrS/controller.png",
         category:'new',
-        productName: "GP11 Shooter USB Gamepad",
+        productName: "GP11 Gamepad",
         Price: 660,
         initialRating: 4,
         review: 55,

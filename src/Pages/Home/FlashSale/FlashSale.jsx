@@ -79,20 +79,22 @@ const products = [
 const FlashSale = () => {
   const [showAll, setShowAll] = useState(false);
   const [initialVisibleCount, setInitialVisibleCount] = useState(4);
+  const [timeLeft, setTimeLeft] = useState({
+    days: "00",
+    hours: "00",
+    minutes: "00",
+    seconds: "00",
+  });
 
   useEffect(() => {
     const updateVisibleCount = () => {
       if (window.innerWidth >= 1536) {
-        // 2xl
         setInitialVisibleCount(4);
       } else if (window.innerWidth >= 1280) {
-        // lg
         setInitialVisibleCount(4);
       } else if (window.innerWidth >= 768) {
-        // md
         setInitialVisibleCount(4);
       } else {
-        // sm and below
         setInitialVisibleCount(4);
       }
     };
@@ -105,53 +107,84 @@ const FlashSale = () => {
     };
   }, []);
 
-  const toggleShowAll = () => {
-    setShowAll(!showAll);
-  };
+  useEffect(() => {
+    const target = new Date();
+    target.setDate(target.getDate() + 3);
+    target.setHours(target.getHours() + 23);
+    target.setMinutes(target.getMinutes() + 19);
+    target.setSeconds(target.getSeconds() + 59);
+
+    const interval = setInterval(() => {
+      const now = new Date().getTime();
+      const distance = target.getTime() - now;
+
+      if (distance < 0) {
+        clearInterval(interval);
+        return;
+      }
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance / (1000 * 60 * 60)) % 24);
+      const minutes = Math.floor((distance / (1000 * 60)) % 60);
+      const seconds = Math.floor((distance / 1000) % 60);
+
+      setTimeLeft({
+        days: days.toString().padStart(2, "0"),
+        hours: hours.toString().padStart(2, "0"),
+        minutes: minutes.toString().padStart(2, "0"),
+        seconds: seconds.toString().padStart(2, "0"),
+      });
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  const toggleShowAll = () => setShowAll(!showAll);
+
   const visibleProducts = showAll
     ? products
     : products.slice(0, initialVisibleCount);
 
   return (
-    <div className="pt-10 md:pt-28 px-2 md:px-24  ">
+    <div className="pt-10 md:pt-28 px-2 md:px-24">
       <p className="text-red-500 border-l-8 border-rose-700 ps-3 py-2">
         Todays
       </p>
-      <div className="flex flex-col md:flex-row  md:items-center gap-y-5 md:gap-x-16  py-5">
+      <div className="flex flex-col md:flex-row md:items-center gap-y-5 md:gap-x-16 py-5">
         <div>
-          <p className="font-semibold text-4xl">Flash Sales </p>
+          <p className="font-semibold text-4xl">Flash Sales</p>
         </div>
         <div className="flex items-end gap-3">
           <div>
             <p className="text-xs">Days</p>
-            <p className="font-semibold text-3xl">03</p>
+            <p className="font-semibold text-3xl">{timeLeft.days}</p>
           </div>
           <div>
             <p className="text-red-500 font-semibold text-2xl pb-1">:</p>
           </div>
           <div>
             <p className="text-xs">Hours</p>
-            <p className="font-semibold text-3xl">23</p>
+            <p className="font-semibold text-3xl">{timeLeft.hours}</p>
           </div>
           <div>
             <p className="text-red-500 font-semibold text-2xl pb-1">:</p>
           </div>
           <div>
             <p className="text-xs">Minutes</p>
-            <p className="font-semibold text-3xl">19</p>
+            <p className="font-semibold text-3xl">{timeLeft.minutes}</p>
           </div>
           <div>
             <p className="text-red-500 font-semibold text-2xl pb-1">:</p>
           </div>
           <div>
             <p className="text-xs">Seconds</p>
-            <p className="font-semibold text-3xl">59</p>
+            <p className="font-semibold text-3xl">{timeLeft.seconds}</p>
           </div>
         </div>
       </div>
 
       <div>
-        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-4 lg:gap-6 pt-10 ">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 lg:gap-6 pt-10">
           {visibleProducts.map((product, index) => (
             <Card
               key={index}
@@ -165,7 +198,7 @@ const FlashSale = () => {
             />
           ))}
         </div>
-        <div className="flex justify-center items-center min-w-screen pt-20">
+        <div className="flex justify-center items-center min-w-screen pt-10">
           <button
             type="button"
             className="px-4 py-2 bg-red-700 text-white font-semibold rounded hover:bg-red-800"

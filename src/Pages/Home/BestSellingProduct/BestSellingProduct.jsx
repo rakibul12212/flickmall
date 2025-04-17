@@ -1,4 +1,4 @@
-import  { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Card from "../../../Component/Ui/Card/Card";
 
 const BestSellingProducts = [
@@ -18,7 +18,7 @@ const BestSellingProducts = [
     DiscountPrice: 960,
     OriginalPrice: 1160,
     initialRating: 5,
-    review: 65 ,
+    review: 65,
   },
   {
     imageSrc: "https://i.ibb.co/dPfdrjv/Frame-610.png",
@@ -134,7 +134,7 @@ const BestSellingProduct = () => {
       </div>
 
       <div>
-        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-4 lg:gap-6 pt-10 ">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4  gap-4 lg:gap-6 pt-10 2xl:px-10">
           {visibleProducts.map((product, index) => (
             <Card
               key={index}

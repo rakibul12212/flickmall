@@ -1,5 +1,7 @@
 import React from "react";
 import Container from "../../Component/Ui/Container";
+import { FiPhoneCall } from "react-icons/fi";
+import { HiOutlineMail } from "react-icons/hi";
 
 const Contact = () => {
   return (
@@ -8,8 +10,8 @@ const Contact = () => {
         <div className="flex flex-col md:flex-row justify-center items-start md:items-center gap-y-10 md:gap-y-0 gap-x-16">
           <div className="w-full md:w-1/2">
             <div className="border-b-2 pb-5">
-              <div className="flex items-center gap-x-4 ">
-                <img src="https://i.ibb.co/swmxH2c/icons-phone.png" alt="Phone Icon" />
+              <div className="flex items-center gap-x-4">
+                <FiPhoneCall className="text-2xl text-red-500" />
                 <p className="font-medium text-lg">Call To Us</p>
               </div>
               <p className="pt-5 pb-2">We are available 24/7, 7 days a week.</p>
@@ -17,8 +19,8 @@ const Contact = () => {
             </div>
             <div className="border-b-2 pt-10 pb-5">
               <div className="flex items-center gap-x-4">
-                <img src="https://i.ibb.co/0mBLrS9/icons-mail.png" alt="Mail Icon" />
-                <p className="font-medium text-lg">Write To US</p>
+                <HiOutlineMail className="text-2xl text-red-500" />
+                <p className="font-medium text-lg">Write To Us</p>
               </div>
               <p className="w-full md:w-3/4 pt-5">
                 Fill out our form and we will contact you within 24 hours.

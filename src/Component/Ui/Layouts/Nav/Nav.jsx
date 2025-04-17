@@ -24,7 +24,6 @@ const Nav = () => {
         </div>
       </div>
       <Container>
-        {" "}
         <nav className="bg-white shadow-sm">
           <div className="mx-auto px-2">
             <div className="flex justify-between md:px-20 font-semibold">

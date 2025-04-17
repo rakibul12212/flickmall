@@ -183,7 +183,7 @@ const OurProduct = () => {
             />
           ))}
         </div>
-        <div className="flex justify-center items-center min-w-screen pt-10 md:pt-20">
+        <div className="flex justify-center items-center min-w-screen pt-10 md:pt-10">
           <button
             type="button"
             className="px-4 py-2 bg-red-700 text-white font-semibold rounded hover:bg-red-800"

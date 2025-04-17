@@ -1,12 +1,10 @@
-
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Autoplay, Pagination } from "swiper/modules";
- import img from "../../../../public/iphone.jpg"
- import img1 from "../../../../public/iphone1.jpg"
- import img2 from "../../../../public/iphone2.jpg"
-
+import img from "/iphone.jpg";
+import img1 from "/iphone1.jpg";
+import img2 from "/iphone2.jpg";
 
 const Banner = () => {
   return (
@@ -70,20 +68,20 @@ const Banner = () => {
           </a>
         </div>
       </div>
-      <div className=" md:pt-5 max-w-[960px] overflow-hidden sm:ps-5 md:ps-5 lg:ps-5">
+      <div className=" md:pt-5 md:max-w-full  overflow-hidden sm:ps-5 md:ps-5 lg:ps-5">
         <Swiper
-           autoplay={{
+          autoplay={{
             delay: 5000,
             disableOnInteraction: false,
           }}
-        pagination={true}
+          pagination={true}
           modules={[Pagination, Autoplay]}
           className="mySwiper"
         >
           <SwiperSlide className="relative">
             <img
               src={img}
-              className="h-[240px] md:h-[340px] w-[960px]"
+              className="h-[240px] md:h-[340px] md:w-[960px] 2xl:w-full"
             />
             <p className="absolute text-white  text-sm md:font-semibold md:text-2xl top-20 left-5 px-2 md:top-16 md:left-5 md:px-5 ">
               iPhone 14 series
@@ -118,11 +116,11 @@ const Banner = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide className="relative">
-          <img
+            <img
               src={img1}
-            className="h-[240px] md:h-[340px] w-[960px]"
+              className="h-[240px] md:h-[340px] w-[960px] 2xl:w-full"
             />
-          <p className="absolute text-black  text-sm md:font-semibold md:text-2xl top-20 left-5 px-2 md:top-16 md:left-5 md:px-5 ">
+            <p className="absolute text-black  text-sm md:font-semibold md:text-2xl top-20 left-5 px-2 md:top-16 md:left-5 md:px-5 ">
               iPhone 14 series
             </p>
             <p className="absolute text-black font-medium text-2xl sm:text-3xl md:text-5xl top-20 left-5 px-2 pt-7  md:top-16 md:left-5 md:px-5 md:pt-10 ">
@@ -155,11 +153,11 @@ const Banner = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide className="relative">
-          <img
+            <img
               src={img2}
-              className="h-[240px] md:h-[340px] w-[960px]"
+              className="h-[240px] md:h-[340px] w-[960px] 2xl:w-full"
             />
-           <p className="absolute text-white  text-sm md:font-semibold md:text-2xl top-20 left-5 px-2 md:top-16 md:left-5 md:px-5 ">
+            <p className="absolute text-white  text-sm md:font-semibold md:text-2xl top-20 left-5 px-2 md:top-16 md:left-5 md:px-5 ">
               iPhone 14 series
             </p>
             <p className="absolute text-white font-medium text-2xl sm:text-3xl md:text-5xl top-20 left-5 px-2 pt-7  md:top-16 md:left-5 md:px-5 md:pt-10 ">
@@ -191,8 +189,6 @@ const Banner = () => {
               </button>
             </div>
           </SwiperSlide>
-          
-          
         </Swiper>
       </div>
     </div>

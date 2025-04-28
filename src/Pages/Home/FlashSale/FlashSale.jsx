@@ -89,7 +89,7 @@ const FlashSale = () => {
   useEffect(() => {
     const updateVisibleCount = () => {
       if (window.innerWidth >= 1536) {
-        setInitialVisibleCount(4);
+        setInitialVisibleCount(5);
       } else if (window.innerWidth >= 1280) {
         setInitialVisibleCount(4);
       } else if (window.innerWidth >= 768) {
@@ -184,7 +184,7 @@ const FlashSale = () => {
       </div>
 
       <div>
-        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 lg:gap-6 pt-10">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-4 lg:gap-6 pt-10">
           {visibleProducts.map((product, index) => (
             <Card
               key={index}

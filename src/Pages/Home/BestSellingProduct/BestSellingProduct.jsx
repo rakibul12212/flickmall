@@ -75,6 +75,24 @@ const BestSellingProducts = [
     initialRating: 4,
     review: 95,
   },
+  {
+    imageSrc: "https://i.ibb.co/p0Mw3Q4/Frame-613.png",
+
+    productName: "IPS LCD Gaming Monitor",
+    DiscountPrice: 370,
+    OriginalPrice: 400,
+    initialRating: 5,
+    review: 99,
+  },
+  {
+    imageSrc: "https://i.ibb.co/TkFKvxb/Frame-614.png",
+
+    productName: "S-Series Comfort Chair",
+    DiscountPrice: 375,
+    OriginalPrice: 430,
+    initialRating: 4,
+    review: 95,
+  },
 ];
 
 const BestSellingProduct = () => {
@@ -85,7 +103,7 @@ const BestSellingProduct = () => {
     const updateVisibleCount = () => {
       if (window.innerWidth >= 1536) {
         // 2xl
-        setInitialVisibleCount(4);
+        setInitialVisibleCount(5);
       } else if (window.innerWidth >= 1280) {
         // lg
         setInitialVisibleCount(4);
@@ -122,7 +140,7 @@ const BestSellingProduct = () => {
         <div>
           <p className="font-semibold text-4xl">Best Selling Product </p>
         </div>
-        <div className="flex justify-center items-center min-w-screen ">
+        <div className="flex justify-center items-center min-w-screen 2xl:pr-10">
           <button
             type="button"
             className="px-2 md:px-4 py-2  bg-red-700 text-white font-normal md:font-semibold rounded hover:bg-red-800"
@@ -134,7 +152,7 @@ const BestSellingProduct = () => {
       </div>
 
       <div>
-        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4  gap-4 lg:gap-6 pt-10 2xl:px-10">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 2xl:grid-cols-5 gap-4 lg:gap-6 pt-10 ">
           {visibleProducts.map((product, index) => (
             <Card
               key={index}
